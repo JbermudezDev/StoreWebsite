@@ -286,6 +286,7 @@ tbody tr:hover {
 h2 {
     padding: 10px;
     color: #fffefe;
+    
     border-radius: 5px;
     margin-top: 20px;
     text-align: center;
@@ -342,9 +343,10 @@ p{
 }
 
 
+
 .parent {
     display: grid;
-    
+    text-align: center;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 8px;
@@ -356,82 +358,210 @@ p{
     height: 70%;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     gap: 50px; /* Espaciado entre imagen y texto */
-    margin-top: 40px; /* Ajuste negativo para moverlo hacia arriba */
+    margin-top: -10px; /* Ajuste negativo para moverlo hacia arriba */
     margin-left: 100px;
 }
-
     
-.div1 {
-    grid-column: span 3 / span 3;
-    grid-row: span 5 / span 5;
-    border-radius: 15px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.145);
-    max-width: 1200px;
-    width: 100%;
-    height: 85%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    gap: 50px; /* Espaciado entre imagen y texto */
+
+
+
+
+.div1 img, .div2 img, .div3 img, .div4 img, .div5 img  { 
+    width: 100%;  /* Ocupar todo el ancho del contenedor */
+    height: 100%; /* Ocupar todo el alto del contenedor */
+    object-fit: cover; /* Ajustar imagen sin deformarse (recortando si es necesario) */
+    border-radius: 15px; /* Mantener el borde redondeado */
 }
-
-.div2, .div3 {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-
-    grid-row: span 2 / span 2;
-    border-radius: 15px;
-    padding: 0; /* Elimina padding para maximizar espacio */
-    background-color: rgba(255, 255, 255, 0.1);
-    
-    max-width: 1200px;
-    width: 100%;
-    height: 110%; /* Asegura que el div tenga toda la altura asignada */
-
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.div2 {
-    grid-column-start: 4;
-}
-
-.div3 {
-    grid-column-start: 5;
-}
-
-.div2 img, .div3 img {
+.div6 img { 
     width: 100%;  /* Ocupar todo el ancho del contenedor */
     height: 100%; /* Ocupar todo el alto del contenedor */
     object-fit: cover; /* Ajustar imagen sin deformarse (recortando si es necesario) */
     border-radius: 15px; /* Mantener el borde redondeado */
 }
 
+
+.div1 {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    grid-row: span 2 / span 2;
+    padding: 0; /* Elimina padding que podría reducir el espacio de la imagen */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    max-width: 1500px;
+    width: 105%;
+    height: 100%; /* Asegura que el div tenga toda la altura asignada */
+    
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.div2 {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    grid-row: span 2 / span 2;
+    padding: 0; /* Elimina padding que podría reducir el espacio de la imagen */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    
+    max-width: 1500px;
+    width: 105%;
+    height: 100%; /* Asegura que el div tenga toda la altura asignada */
+    
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.div3 {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    grid-row: span 2 / span 2;
+    padding: 0; /* Elimina padding que podría reducir el espacio de la imagen */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    
+    max-width: 1500px;
+    width: 105%;
+    height: 100%; /* Asegura que el div tenga toda la altura asignada */
+    
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
 
 .div4 {
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
-
-    grid-column: span 2 / span 2;
-    grid-row: span 3 / span 3;
-    grid-column-start: 4;
-    grid-row-start: 3;
-    
-    border-radius: 15px;
+    grid-row: span 2 / span 2;
     padding: 0; /* Elimina padding que podría reducir el espacio de la imagen */
     background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
     
-    max-width: 1200px;
-    width: 100%;
-    height: 84%; /* Asegura que el div tenga toda la altura asignada */
+    max-width: 1500px;
+    width: 105%;
+    height: 100%; /* Asegura que el div tenga toda la altura asignada */
     
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.div4 img {
-    width: 100%;  /* Ocupar todo el ancho del contenedor */
-    height: 100%; /* Ocupar todo el alto del contenedor */
-    object-fit: cover; /* Ajustar imagen sin deformarse (recortando si es necesario) */
-    border-radius: 15px; /* Mantener el borde redondeado */
+.div5 {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    grid-row: span 2 / span 2;
+    padding: 0; /* Elimina padding que podría reducir el espacio de la imagen */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    
+    max-width: 1500px;
+    width: 105%;
+    height: 100%; /* Asegura que el div tenga toda la altura asignada */
+    
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.div6 {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 4;
+    padding: 0; /* Elimina padding que podría reducir el espacio de la imagen */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    
+    max-width: 1500px;
+    width: 105%;
+    height: 100%; /* Asegura que el div tenga toda la altura asignada */
+    
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.div7 {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 4;
+    border-radius: 5px;
+
+    padding: 0; /* Elimina padding que podría reducir el espacio de la imagen */
+    background-color: rgba(255, 255, 255, 0.1);
+    max-width: 1500px;
+    width: 105%;
+    height: 100%; /* Asegura que el div tenga toda la altura asignada */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.div8 {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 4;
+    border-radius: 5px;
+
+    padding: 0; /* Elimina padding que podría reducir el espacio de la imagen */
+    background-color: rgba(255, 255, 255, 0.1); 
+    max-width: 1500px;
+    width: 105%;
+    height: 100%; /* Asegura que el div tenga toda la altura asignada */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.div9 {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 4;
+    border-radius: 5px;
+
+    padding: 0; /* Elimina padding que podría reducir el espacio de la imagen */
+    background-color: rgba(255, 255, 255, 0.1);
+    max-width: 1500px;
+    width: 105%;
+    height: 100%; /* Asegura que el div tenga toda la altura asignada */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.div10 {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    grid-row: span 2 / span 2;
+    grid-column-start: 5;
+    grid-row-start: 4;
+    border-radius: 5px;
+
+    padding: 0; /* Elimina padding que podría reducir el espacio de la imagen */
+    background-color: rgba(255, 255, 255, 0.1);
+    max-width: 1500px;
+    width: 105%;
+    height: 100%; /* Asegura que el div tenga toda la altura asignada */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.div11 {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    grid-column-start: 3;
+    grid-row-start: 3;
+    padding: 0; /* Elimina padding que podría reducir el espacio de la imagen */
+    background-color: rgba(255, 255, 255, 0.1);
+    max-width: 1500px;
+    width: 105%;
+    border-radius: 5px;
+
+    height: 100%; /* Asegura que el div tenga toda la altura asignada */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+        
+
+ 
+
+        
