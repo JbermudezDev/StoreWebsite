@@ -366,7 +366,9 @@ p{
 
 
 
-.div1 img, .div2 img, .div3 img, .div4 img, .div5 img  { 
+.div1 img, .div2 img, .div3 img, .div4 img, .div5 img, .div6 img, .div7 img, .div8 img, .div9 img, .div10 img {
+    
+
     width: 100%;  /* Ocupar todo el ancho del contenedor */
     height: 100%; /* Ocupar todo el alto del contenedor */
     object-fit: cover; /* Ajustar imagen sin deformarse (recortando si es necesario) */
