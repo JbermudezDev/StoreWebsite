@@ -13,70 +13,67 @@
 <body>
     <!-- Header separado en div para darle buen diseño con el css mediante la clase header -->
     <div id="header">
-        
-        
-            <h2>Chicken Gold</h2>
-        
+        <h2>Chicken Gold</h2>
         <ul>
             <li><a href="MainMenu.html">About</a></li>
             <li><a href="store.html">Store</a></li>
             <li><a href="buy.html">Buy</a></li>
             <li><img src="../images/carrito-de-compras.png" alt="carrito" height="30px" /></li>
-            
         </ul>
-    
     </div>
     <!--finaliza el header -->
 
     <!-- clase container para darle formato y buena orientacion a la imagen,titulo y contenido acerca de mi tema -->
     <h2>Add New Product</h2>
     <div class="container">
-     <!-- From Uiverse.io by Shoh2008 --> 
-    <div class="form">
-        <div class="subtitle"></div>
-        <div class="input-container ic1">
-          <input id="firstname" class="input" type="text" placeholder="">
-          <div class="cut"></div>
-          <label for="firstname" class="placeholder">Product Name</label>
-        </div>
-        <div class="input-container ic2">
-          <input id="lastname" class="input" type="text" placeholder="">
-          <div class="cut"></div>
-          <label for="lastname" class="placeholder">Description</label>
-        </div>
-        <div class="input-container ic2">
-          <input id="email" class="input" type="text" placeholder="">
-          <div class="cut cut-short"></div>
-          <label for="email" class="placeholder">Photo and Price</label></div>
-          <a href="Menu.html" target="_blank">
-        <button type="text" class="submit">Add Product</button>
-        </a>
-      </div>
-      
-    </div> 
+        <form id="add-article-form" class="form">
+            <!-- Nombre del producto -->
+            <div class="input-container ic1">
+                <input id="article-name" class="input" type="text" placeholder="" required>
+                <div class="cut"></div>
+                <label for="article-name" class="placeholder">Product Name</label>
+            </div>
 
+            <!-- Precio del producto -->
+            <div class="input-container ic2">
+                <input id="article-price" class="input" type="number" placeholder="" min="1000" required>
+                <div class="cut"></div>
+                <label for="article-price" class="placeholder">Price (min $1000)</label>
+            </div>
 
-  
+            <!-- URL de la imagen del producto -->
+            <div class="input-container ic2">
+                <input id="article-image" class="input" type="url" placeholder="" required>
+                <div class="cut"></div>
+                <label for="article-image" class="placeholder">Image URL</label>
+            </div>
 
-        
-    
-        
-        
-    
+            <!-- Atributo adicional 1 -->
+            <div class="input-container ic2">
+                <input id="article-attribute1" class="input" type="text" placeholder="" required>
+                <div class="cut"></div>
+                <label for="article-attribute1" class="placeholder">Attribute 1</label>
+            </div>
 
-    
+            <!-- Atributo adicional 2 -->
+            <div class="input-container ic2">
+                <input id="article-attribute2" class="input" type="text" placeholder="" required>
+                <div class="cut"></div>
+                <label for="article-attribute2" class="placeholder">Attribute 2</label>
+            </div>
 
-    
-    
-    
-      
-    <!--finaliza mi informacion -->
+            <!-- Atributo adicional 3 -->
+            <div class="input-container ic2">
+                <input id="article-attribute3" class="input" type="text" placeholder="" required>
+                <div class="cut"></div>
+                <label for="article-attribute3" class="placeholder">Attribute 3</label>
+            </div>
 
-    
+            <!-- Botón para agregar el producto -->
+            <button type="submit" class="submit">Add Product</button>
+        </form>
+    </div>
 
-    <!--Comienza el footer que es el apartado de las redes sociales y parte inferior de mi pagina donde le damos diseños con css mediantes id como footer y copyright -->
-    
-       
-    <!--finaliza el footer -->
+    <script src="../js/script.js"></script>
 </body>
 </html>
