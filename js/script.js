@@ -81,9 +81,9 @@ document.getElementById('add-article-form').addEventListener('submit', function(
     const name = document.getElementById('article-name').value;
     const price = parseFloat(document.getElementById('article-price').value);
     const image = document.getElementById('article-image').value;
-    const attribute1 = document.getElementById('article-attribute1').value;
-    const attribute2 = document.getElementById('article-attribute2').value;
-    const attribute3 = document.getElementById('article-attribute3').value;
+    const sabor = document.getElementById('article-attribute1').value;
+    const calidad = document.getElementById('article-attribute2').value;
+    const detalles = document.getElementById('article-attribute3').value;
 
     // Validar que el precio sea mayor o igual a 1000
     if (price < 1000) {
@@ -97,7 +97,7 @@ document.getElementById('add-article-form').addEventListener('submit', function(
     newArticle.innerHTML = `
         <img src="${image}" alt="${name}" />
         <h3>${name}</h3>
-        <p>${attribute1}, ${attribute2}, ${attribute3}</p>
+        <p>${sabor}, ${calidad}, ${detalles}</p>
         <p>Precio: $${price.toFixed(2)}</p>
         <button class="add-to-cart" data-name="${name}" data-price="${price}" data-image="${image}">Añadir al carrito</button>
     `;
@@ -120,9 +120,9 @@ document.getElementById('add-article-form').addEventListener('submit', function(
     const name = document.getElementById('article-name').value;
     const price = parseFloat(document.getElementById('article-price').value);
     const image = document.getElementById('article-image').value;
-    const attribute1 = document.getElementById('article-attribute1').value;
-    const attribute2 = document.getElementById('article-attribute2').value;
-    const attribute3 = document.getElementById('article-attribute3').value;
+    const sabor = document.getElementById('article-attribute1').value;
+    const calidad = document.getElementById('article-attribute2').value;
+    const detalles = document.getElementById('article-attribute3').value;
 
     // Validar que el precio sea mayor o igual a 1000
     if (price < 1000) {
@@ -136,7 +136,7 @@ document.getElementById('add-article-form').addEventListener('submit', function(
     newArticle.innerHTML = `
         <img src="${image}" alt="${name}" />
         <h3>${name}</h3>
-        <p>${attribute1}, ${attribute2}, ${attribute3}</p>
+        <p>${sabor}, ${calidad}, ${detalles}</p>
         <p>Precio: $${price.toFixed(2)}</p>
         <button class="add-to-cart" data-name="${name}" data-price="${price}" data-image="${image}">Añadir al carrito</button>
     `;
